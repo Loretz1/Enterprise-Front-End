@@ -135,19 +135,19 @@ export default{
     border-color: rgb(193, 46, 46);
 }
 .main{
-    padding:0;
+    padding:4px;
     background-color:#F4F8FB;
     /* background-size: cover; */
     position: relative;
 }
-.main-router{
+/* .main-router{
     position: absolute;
     margin: auto;
     left: 0;
     right:0;
     top: 0;
     bottom: 0;
-}
+} */
 .el-input /deep/ .el-input__wrapper {
     background-color: rgb(21,184,209);
     --el-input-border-color: rgb(21,184,209);

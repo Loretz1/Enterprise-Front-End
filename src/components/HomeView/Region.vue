@@ -33,13 +33,15 @@
 
 <style scoped>
 .wholeView{
-    height: 680px;
-    width: 1450px;
+    min-height: 680px;
+    min-width: 1450px;
+    height: 100%;
+    width: 100%;
 
     /* background-color: rgb(231,231,231);
     border-color: rgb(225,225,225);
     border-radius: 10px; */
-    background-color: transparent;
+    background-color: red;
 }
 .box-border-css{
     border:0.8px solid rgb(218, 213, 213);
