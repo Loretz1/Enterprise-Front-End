@@ -24,7 +24,35 @@ const router = createRouter({
         {
             path:'/home',
             name:'home',
-            component:()=>import("../views/Home.vue")
+            redirect:'/home/region',
+            component:()=>import("../views/HomeView.vue"),
+            children:[
+              {
+                path:'region',
+                name:'home-region',
+                component:()=>import("../components/HomeView/Region.vue")
+              },
+              {
+                path:'search',
+                name:'home-search',
+                component:()=>import("../components/HomeView/Search.vue")
+              },
+              {
+                path:'index',
+                name:'home-index',
+                component:()=>import("../components/HomeView/Index.vue")
+              },
+              {
+                path:'enterprise',
+                name:'home-enterprise',
+                component:()=>import("../components/HomeView/Enterprise.vue")
+              },
+              {
+                path:'follow',
+                name:'home-follow',
+                component:()=>import("../components/HomeView/Follow.vue")
+              }
+            ]
         }
     ]
 })
