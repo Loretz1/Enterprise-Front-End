@@ -64,7 +64,34 @@ export default{
                 setTimeout(()=>{this.isShakeTextName.isShake_2=false},800)
             }
             if(this.logAccount.account&&this.logAccount.password){
-                //axios请求 
+                //axios请求
+                // this.$axios({
+                //     url: "/api/user/login",
+                //     method: "post",
+                //     data: {
+                //         userName:this.logAccount.account,
+                //         password:this.logAccount.password,
+                //     },
+                // })
+                // .then((res) => {
+                //     if(res.status===200){
+                //         ElMessage.success(res.msg)
+                //         this.user.login(this.logAccount.account);
+                //         router.push('/home');                        
+                //     }
+                //     else if(res.status===400){
+                //         ElMessage.warning(res.msg)
+                //         this.logAccount.password=""
+                //         if(res.data===-1)
+                //         this.logAccount.userName=""
+                //     }
+                //     else{
+                //         ElMessage.warning(res.msg)
+                //     }
+                // })
+                // .catch((err) => {
+                //     ElMessage.error(res.msg);
+                // });
                 this.user.login(this.logAccount.account);
                 ElMessage.success("登录成功")
                 router.push('/home');

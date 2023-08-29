@@ -96,7 +96,33 @@
     const register = () => {
         formRef.value.validate((isValid) => {
             if(isValid) {
-                //post请求，注册用户
+                    // axios请求
+                    // this.$axios({
+                    //     url: "/api/user/register",
+                    //     method: "post",
+                    //     data: {
+                    //         userName:form.account,
+                    //         password:form.password,
+                    //     },
+                    // })
+                    // .then((res) => {
+                    //     if(res.status===200){
+                    //         ElMessage.success(res.msg)
+                    //         router.push('/');                        
+                    //     }
+                    //     else if(res.status===400){
+                    //         ElMessage.warning(res.msg)
+                    //         form.username=""
+                    //         form.password=""
+                    //         form.password_repeat=""
+                    //     }
+                    //     else{
+                    //         ElMessage.warning(res.msg)
+                    //     }
+                    // })
+                    // .catch((err) => {
+                    //     ElMessage.error(res.msg);
+                    // });
                     ElMessage.success("注册成功")
                     router.push("/")
             } else {
