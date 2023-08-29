@@ -12,9 +12,7 @@
 
 <style scoped>
 .wholeView{
-    height: 680px;
-    width: 1450px;
-    background-color: transparent;
+
 }
 
 </style>

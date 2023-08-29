@@ -1,5 +1,13 @@
 <!-- 关注界面 -->
 <template>
-    This is FollowVue.
-    关注界面
+    <div class="wholeView">
+        This is FollowVue.
+        关注界面
+    </div>
 </template>
+
+<style scoped>
+.wholeView{
+    
+}
+</style>

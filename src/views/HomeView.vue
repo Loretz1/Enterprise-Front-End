@@ -1,5 +1,5 @@
 <template>
-    <div style="width: 100vw;height: 100vh">
+    <div style="width: 100vw;height: 100vh;overflow: hidden;">
         <!-- 你好，{{user.user}}
         <el-button @click="logout">退出</el-button> -->
         <el-container style="height: 100%;">
@@ -140,14 +140,17 @@ export default{
     /* background-size: cover; */
     position: relative;
 }
-/* .main-router{
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right:0;
-    top: 0;
-    bottom: 0;
-} */
+.main-router{
+    min-height: 680px;
+    min-width: 1450px;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+
+    /* background-color: rgb(231,231,231);
+    border-color: rgb(225,225,225);
+    border-radius: 10px; */
+}
 .el-input /deep/ .el-input__wrapper {
     background-color: rgb(21,184,209);
     --el-input-border-color: rgb(21,184,209);
