@@ -123,7 +123,7 @@
                     // .catch((err) => {
                     //     ElMessage.error(res.msg);
                     // });
-                    ElMessage.success("注册成功")
+                    ElMessage.success("注册成功");
                     router.push("/")
             } else {
                 ElMessage.warning('请正确填写注册表单内容！')
